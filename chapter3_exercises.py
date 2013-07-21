@@ -22,6 +22,39 @@ def right_justify(s):
 	
 right_justify ("allen")
 
+#3.4
+
+def do_twice(f):
+	 f()
+	 f()
+
+def print_spam():
+	print 'spam'
+
+do_twice(print_spam)
+
+def do_twice(f, arg):
+    f(arg)
+    f(arg)
+
+def print_twice(arg):
+    print arg
+    print arg
+
+do_twice(print_twice, 'spam')
+print ''
+
+def do_four(f, arg):
+    do_twice(f, arg)
+    do_twice(f, arg)
+
+do_four(print_twice, 'spam')
+print ''
+
+
+
+
+
 
 
 
